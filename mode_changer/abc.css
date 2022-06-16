@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffffff;
+    overflow: hidden;
+  }
+  
+  .circle {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    margin: 70px auto;
+    border-radius: 50%;
+    background: #00cce5;
+    overflow: hidden;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+  .circle.is-in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .moon {
+    width: 50px;
+    height: 45px;
+    box-shadow: 11px 0px 0px #fefbce;
+    transform: rotate(175deg);
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .moon.is-moon-in-the-sky {
+    opacity: 1;
+  }
+  
+  .star {
+    background: #fefcdd;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .star:before {
+    background: #fefcdd;
+    content: "";
+    position: absolute;
+  }
+  .star.is-sky-full-of-stars {
+    opacity: 1;
+  }
+  .star.xs {
+    width: 1px;
+    height: 5px;
+    transition-delay: 0.8s;
+  }
+  .star.xs:before {
+    height: 1px;
+    width: 5px;
+  }
+  .star.sm {
+    width: 2px;
+    height: 6px;
+    transition-delay: 1.2s;
+  }
+  .star.sm:before {
+    height: 2px;
+    width: 6px;
+  }
+  .star.m {
+    width: 3px;
+    height: 11px;
+    transition-delay: 1.7s;
+  }
+  .star.m:before {
+    width: 11px;
+    height: 3px;
+  }
+  .star.star-1 {
+    top: 140px;
+    left: 50px;
+  }
+  .star.star-1:before {
+    top: 4px;
+    left: -4px;
+  }
+  .star.star-2 {
+    top: 60px;
+    left: 165px;
+  }
+  .star.star-2:before {
+    top: 4px;
+    left: -4px;
+  }
+  .star.star-3 {
+    top: 125px;
+    left: 80px;
+  }
+  .star.star-3:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-4 {
+    top: 185px;
+    left: 25px;
+  }
+  .star.star-4:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-5 {
+    top: 148px;
+    left: 120px;
+  }
+  .star.star-5:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-6 {
+    top: 30px;
+    left: 195px;
+  }
+  .star.star-6:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-7 {
+    top: 90px;
+    left: 255px;
+  }
+  .star.star-7:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-8 {
+    top: 115px;
+    left: 230px;
+  }
+  .star.star-8:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-9 {
+    top: 85px;
+    left: 220px;
+  }
+  .star.star-9:before {
+    top: 4px;
+    left: -4px;
+  }
+  .star.star-10 {
+    top: 152px;
+    left: 170px;
+  }
+  .star.star-10:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-11 {
+    top: 142px;
+    left: 188px;
+  }
+  .star.star-11:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-12 {
+    top: 133px;
+    left: 374px;
+  }
+  .star.star-12:before {
+    top: 4px;
+    left: -4px;
+  }
+  .star.star-13 {
+    top: 142px;
+    left: 318px;
+  }
+  .star.star-13:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-14 {
+    top: 115px;
+    left: 338px;
+  }
+  .star.star-14:before {
+    top: 2px;
+    left: -2px;
+  }
+  .star.star-15 {
+    top: 42px;
+    left: 318px;
+  }
+  .star.star-15:before {
+    top: 2px;
+    left: -2px;
+  }
+  
+  .bench-back {
+    width: 240px;
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    background-color: #96e8f3;
+    border-radius: 0.34em;
+    z-index: 2;
+  }
+  .bench-back:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #28bed9;
+  }
+  .bench-back:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #28bed9;
+  }
+  .bench-back.first {
+    top: 180px;
+  }
+  .bench-back.second {
+    top: 216px;
+  }
+  .bench-back.third {
+    top: 252px;
+  }
+  
+  .bench-sub-leg {
+    width: 25px;
+    height: 126px;
+    position: absolute;
+    background-color: #28bed9;
+    border-top-right-radius: 0.34em;
+    border-top-left-radius: 0.34em;
+    z-index: 1;
+  }
+  .bench-sub-leg.first {
+    top: 167px;
+    left: 110px;
+  }
+  .bench-sub-leg.second {
+    top: 167px;
+    left: 285px;
+  }
+  
+  .bench-chair {
+    width: 280px;
+    height: 23px;
+    position: absolute;
+    top: 293px;
+    left: 50%;
+    margin-left: -140px;
+    background-color: #96e8f3;
+    border-radius: 0.34em;
+  }
+  
+  .bench-leg {
+    width: 27px;
+    height: 36px;
+    position: absolute;
+    background-color: #28bed9;
+    border-bottom-right-radius: 0.34em;
+    border-bottom-left-radius: 0.34em;
+    z-index: 1;
+  }
+  .bench-leg.first {
+    top: 316px;
+    left: 95px;
+  }
+  .bench-leg.second {
+    top: 316px;
+    right: 95px;
+  }
+  
+  .bench-shadow {
+    width: 240px;
+    height: 23px;
+    position: absolute;
+    top: 333px;
+    left: 50%;
+    margin-left: -120px;
+    background-color: #2a86af;
+    border-radius: 0.34em;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+  }
+  .bench-shadow.activate-shadow {
+    opacity: 1;
+  }
+  
+  .grass {
+    position: absolute;
+    bottom: -80px;
+    left: -10px;
+    width: 448px;
+    height: 193px;
+    border-radius: 26%;
+    background: #37a7cd;
+  }
