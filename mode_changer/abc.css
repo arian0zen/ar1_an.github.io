@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
   
   body {
@@ -27,8 +27,8 @@
   .moon {
     width: 50px;
     height: 45px;
-    box-shadow: 11px 0px 0px #fefbce;
-    transform: rotate(175deg);
+    box-shadow: 11px 0px 0px #f8e700;
+    transform: rotate(135deg);
     position: absolute;
     top: 60px;
     left: 100px;
