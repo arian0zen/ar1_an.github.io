@@ -1,35 +1,67 @@
 * {
-    box-sizing: border-box; 
-  }
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  overflow: hidden;
+}
+.body_dark {
+  background: #1e1e1e;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.circle {
   
-  body {
-    background: #ffffff;
-    overflow: hidden;
-  }
-.body_dark{
-    background: #1e1e1e;
+  
+  position: absolute;
+  top : 2%;
+  left : 93%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background: #00cce5;
+  overflow: hidden;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+.circle.is-in-view {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .moon {
-    width: 40px;
-    height: 36px;
-    box-shadow: 11px 0px 0px #211f1f;
-    transform: rotate(135deg);
-    position: absolute;
-    top: 60px;
-    left: 100px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
+  width: 20px;
+  height: 18px;
+  box-shadow: 5px 0px 0px #f8e700;
+  transform: rotate(135deg);
+  position: absolute;
+  top: -3%;
+  left: 30%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
 .moon.is-moon-in-the-sky {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .moon_is_on {
-    box-shadow: 11px 0px 0px #ebbc00;
+  box-shadow: 5px 0px 0px #f6f6f6;
 }
 .text {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: rgb(42, 42, 42);
+  color: white;
 }
