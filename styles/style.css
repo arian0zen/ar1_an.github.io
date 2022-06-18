@@ -6,8 +6,11 @@ body {
   background: #ffffff;
   overflow: hidden;
 }
-.body_dark {
-  background: #1e1e1e;
+
+.chain_mode{
+  background-image: url("images/chain_bg.png");
+  
+  
 }
 
 .flex {
@@ -16,12 +19,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+.blockchain {
+  
+  background-image: "images/chain.png";
+  position: absolute;
+  top : 2%;
+  left : 93%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background: #00cce5;
+  overflow: hidden;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1); 
+}
+.blockchain.is-in-view {
+  opacity: 1;
+  transform: scale(1);
+}
+.b_chain{
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.b_chain.is-in-view{
+  opacity: 1;
+}
+
 .circle {
   
   
   position: absolute;
   top : 2%;
-  left : 93%;
+  left : 90%;
   transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
@@ -44,7 +77,7 @@ body {
   box-shadow: 5px 0px 0px #f8e700;
   transform: rotate(135deg);
   position: absolute;
-  top: -3%;
+  top: -4.8%;
   left: 30%;
   border-radius: 50%;
   opacity: 0;
