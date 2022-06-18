@@ -24,7 +24,7 @@ $('.circle').on('click', function () {
 });
 
 $('.blockchain').on('click', function () {
-  // console.log("clicked");
+  //console.log("clicked");
   var element = document.body;
   element.classList.toggle("chain_mode");
 });
