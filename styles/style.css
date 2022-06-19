@@ -7,10 +7,8 @@ body {
   overflow: hidden;
 }
 
-.chain_mode{
+.chain_mode {
   background-image: url("../images/chain_bg.png");
-  
-  
 }
 
 .flex {
@@ -20,11 +18,10 @@ body {
   align-items: center;
 }
 .blockchain {
-  
   background-image: "images/chain.png";
   position: absolute;
-  top : 12%;
-  left : 99%;
+  top: 12%;
+  left: 99%;
   transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
@@ -35,55 +32,54 @@ body {
   overflow: hidden;
   transform: scale(0.7);
   opacity: 0;
-  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1); 
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 
 /* media */
 @media screen and (max-width: 1374px) {
-  
-  .blockchain{
+  .blockchain {
     left: 98% !important;
   }
-  .circle{
+  .circle {
     left: 93% !important;
   }
 }
 @media screen and (max-width: 780px) {
-  
-  .blockchain{
+  .blockchain {
     display: none;
-}
-
+  }
+  .ghost{
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .circle{
+    left: 95% !important;
+  }
 }
 @media screen and (max-width: 426px) {
-  
-  .circle{
+  .circle {
     margin-right: 40px !important;
-}
+  }
 
 }
-
-
 
 .blockchain.is-in-view {
   opacity: 1;
   transform: scale(1);
 }
-.b_chain{
+.b_chain {
   opacity: 0;
   transition: opacity 0.8s ease;
 }
 
-.b_chain.is-in-view{
+.b_chain.is-in-view {
   opacity: 1;
 }
 
 .circle {
-  
-  
   position: absolute;
-  top : 12%;
-  left : 96%;
+  top: 12%;
+  left: 96%;
   transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
@@ -125,5 +121,23 @@ body {
 
 .dark-mode {
   background-color: rgb(42, 42, 42);
-  color: white;
+  
+  transition: opacity 100s ease;
+}
+.nav_container {
+  background-color: #676767;
+}
+.image {
+  opacity: 0;
+}
+.image_view {
+  width: 90px;
+  height: 90px;
+  opacity: 100;
+  transition: opacity 2s ease;
+}
+
+.ghost {
+  width: 90px;
+  height: 90px;
 }

@@ -2,24 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-    </link>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+  </link>
 </head>
 
 <body>
-    <div class="circle flex">
-        <!-- <h1> hey</h1> -->
-        <div class="moon"></div>
+  <div class="nav_container">
+    <div class="image"> <img class="ghost" src="gifs/ghost.gif" alt="" srcset=""> </div>
+    <nav class="nav container">
+      <a href="#" class="nav_logo">Subham</a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link">
+              <i class="uil uil-estate nav_icon"></i> Home
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">
+              <i class="uil uil-user nav_icon"></i> About
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-file-alt nav_icon"></i> Skills
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#qualification" class="nav_link">
+              <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#projects" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i> Projects
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">
+              <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close" id="nav-close"></i>
       </div>
-      <div class="blockchain flex">
-        <!-- <h1> hey</h1> -->
-        <div class="b_chain"> <img src="images/chain.png"></div>
+
+      <div class="nav_btns">
+        <!-- Change Theme -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
       </div>
-      
+    </nav>
+
+  </div>
+
+
+
+  <div class="circle flex">
+    <!-- <h1> hey</h1> -->
+    <div class="moon"></div>
+  </div>
+  <div class="blockchain flex">
+    <!-- <h1> hey</h1> -->
+    <div class="b_chain"> <img src="images/chain.png"></div>
+  </div>
 
 </body>
 

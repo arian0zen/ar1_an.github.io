@@ -21,6 +21,9 @@ $('.circle').on('click', function () {
   var element = document.body;
   element.classList.toggle("dark-mode");
   $(".moon").toggleClass("moon_is_on");
+  $(".image").toggleClass("image_view");
+  
+
 });
 
 $('.blockchain').on('click', function () {
