@@ -1,5 +1,8 @@
 // CSS only, js only for adding classes, animation purposes only...I'm lazy :)
 console.log("Hello World");
+$(window).on("load", function() {
+  $(".loader-wrapper").fadeOut("slow");
+});
 $(document).ready(function () {
   setTimeout(function () {
     $(".circle").addClass("is-in-view");
@@ -13,7 +16,8 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".b_chain").addClass("is-in-view");
   }, 1150);
-
+  
+  
 });
 
 $('.circle').on('click', function () {
@@ -21,7 +25,8 @@ $('.circle').on('click', function () {
   var element = document.body;
   element.classList.toggle("dark-mode");
   $(".moon").toggleClass("moon_is_on");
-  $(".image").toggleClass("image_view");
+  $(".dark_image").toggleClass("dark_image_view");
+  $(".light_image").toggleClass("light_image_view");
   
 
 });

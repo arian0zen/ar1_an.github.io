@@ -7,6 +7,17 @@ body {
   overflow: hidden;
 }
 
+.loader-wrapper{
+  width: 100;
+  height: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  
+
+}
+
 .chain_mode {
   background-image: url("../images/chain_bg.png");
 }
@@ -49,6 +60,11 @@ body {
     display: none;
   }
   .ghost{
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+  .plant{
     height: 60px !important;
     width: 60px !important;
   }
@@ -122,22 +138,57 @@ body {
 .dark-mode {
   background-color: rgb(42, 42, 42);
   
-  transition: opacity 100s ease;
+ 
 }
-.nav_container {
-  background-color: #676767;
-}
-.image {
+
+.dark_image {
   opacity: 0;
+  width: 90px;
+  height: 90px;
+ 
+  
 }
-.image_view {
+.dark_image_view {
   width: 90px;
   height: 90px;
   opacity: 100;
-  transition: opacity 2s ease;
+  visibility: visible;
+  transition: 2s ease;
 }
 
 .ghost {
   width: 90px;
   height: 90px;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  /* transition: 2s ease; */
+
+
+}
+.light_image {
+  opacity: 100;
+  width: 90px;
+  height: 90px;
+
+  
+  
+}
+.light_image_view {
+  width: 90px;
+  height: 90px;
+  opacity: 0;
+  visibility: visible;
+  
+  
+}
+
+.plant{
+  top: 10px;
+  left: 10px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  opacity: 100;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+
 }
