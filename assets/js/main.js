@@ -6,19 +6,19 @@ $(window).on("load", function() {
 $(document).ready(function () {
   setTimeout(function () {
     $(".circle").addClass("is-in-view");
-  }, 1550);
+  }, 2000);
   setTimeout(function () {
     $(".moon").addClass("is-moon-in-the-sky");
-  }, 1150);
+  }, 2500);
   setTimeout(function () {
     $(".blockchain").addClass("is-in-view");
-  }, 1550);
+  }, 2000);
   setTimeout(function () {
     $(".b_chain").addClass("is-in-view");
-  }, 1150);
+  }, 2500);
   setTimeout(function () {
     $(".light_mode").addClass("light_image");
-  }, 1550);
+  }, 2000);
  
 
   
