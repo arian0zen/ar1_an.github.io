@@ -7,15 +7,12 @@ body {
   overflow: hidden;
 }
 
-.loader-wrapper{
+.loader-wrapper {
   width: 100;
   height: 100;
   position: fixed;
   top: 0;
   left: 0;
-  
-  
-
 }
 
 .chain_mode {
@@ -59,16 +56,16 @@ body {
   .blockchain {
     display: none;
   }
-  .ghost{
+  .ghost {
     height: 60px !important;
     width: 60px !important;
   }
 
-  .plant{
+  .plant {
     height: 60px !important;
     width: 60px !important;
   }
-  .circle{
+  .circle {
     left: 95% !important;
   }
 }
@@ -76,7 +73,6 @@ body {
   .circle {
     margin-right: 40px !important;
   }
-
 }
 
 .blockchain.is-in-view {
@@ -137,23 +133,19 @@ body {
 
 .dark-mode {
   background-color: rgb(42, 42, 42);
-  
- 
 }
 
 .dark_image {
   opacity: 0;
   width: 90px;
   height: 90px;
- 
-  
 }
 .dark_image_view {
   width: 90px;
   height: 90px;
   opacity: 100;
   visibility: visible;
-  transition: 2s ease;
+  transition: 1s ease-in-out;
 }
 
 .ghost {
@@ -162,33 +154,30 @@ body {
   position: relative;
   transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   /* transition: 2s ease; */
-
-
+}
+.light_mode {
+  opacity: 0;
 }
 .light_image {
-  opacity: 100;
+  opacity: 1;
   width: 90px;
   height: 90px;
-
-  
-  
+  transition: 1s ease-in-out;
+  /* transform: scale(2); */
 }
 .light_image_view {
   width: 90px;
   height: 90px;
-  opacity: 0;
-  visibility: visible;
-  
-  
-}
 
-.plant{
+  display: none;
+  opacity: 0;
+}
+.plant {
   top: 10px;
   left: 10px;
   width: 90px;
   height: 90px;
   position: absolute;
   opacity: 100;
-  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-
+  transition: all 2s cubic-bezier(0.694, 0.048, 0.335, 1);
 }

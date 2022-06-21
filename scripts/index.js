@@ -1,21 +1,25 @@
 // CSS only, js only for adding classes, animation purposes only...I'm lazy :)
 console.log("Hello World");
 $(window).on("load", function() {
-  $(".loader-wrapper").fadeOut("slow");
+  $(".loader-wrapper").fadeOut(1800);
 });
 $(document).ready(function () {
   setTimeout(function () {
     $(".circle").addClass("is-in-view");
-  }, 550);
+  }, 1550);
   setTimeout(function () {
     $(".moon").addClass("is-moon-in-the-sky");
   }, 1150);
   setTimeout(function () {
     $(".blockchain").addClass("is-in-view");
-  }, 550);
+  }, 1550);
   setTimeout(function () {
     $(".b_chain").addClass("is-in-view");
   }, 1150);
+  setTimeout(function () {
+    $(".light_mode").addClass("light_image");
+  }, 1550);
+
   
   
 });
