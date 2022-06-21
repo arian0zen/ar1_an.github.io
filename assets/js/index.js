@@ -19,6 +19,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".light_mode").addClass("light_image");
   }, 1550);
+ 
 
   
   
@@ -31,6 +32,7 @@ $('.circle').on('click', function () {
   $(".moon").toggleClass("moon_is_on");
   $(".dark_image").toggleClass("dark_image_view");
   $(".light_image").toggleClass("light_image_view");
+  $(".text_light").toggleClass("text_dark")
   
 
 });
@@ -40,3 +42,6 @@ $('.blockchain').on('click', function () {
   var element = document.body;
   element.classList.toggle("chain_mode");
 });
+
+
+
