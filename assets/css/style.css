@@ -45,6 +45,14 @@ body {
 }
 
 /* media */
+@media screen and (max-width: 600px){
+  .inside_menu{
+    opacity: 0 !important;
+  }
+}
+.inside_menu{
+  opacity: 1!important;
+}
 
 
   .ghost {
