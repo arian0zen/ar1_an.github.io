@@ -20,9 +20,6 @@ $(document).ready(function () {
     $(".light_mode").addClass("light_image");
   }, 2000);
  
-
-  
-  
 });
 
 $('.circle').on('click', function () {
