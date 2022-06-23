@@ -19,6 +19,10 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".light_mode").addClass("light_image");
   }, 2000);
+  setTimeout(function () {
+    $(".margin_nav_load").addClass("margin_nav_onload");
+  }, 1800);
+
  
 });
 
