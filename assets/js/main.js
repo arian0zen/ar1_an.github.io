@@ -22,6 +22,9 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".margin_nav_load").addClass("margin_nav_onload");
   }, 1800);
+  setTimeout(function () {
+    $(".dev_text").addClass("bg_text");
+  }, 1800);
 
  
 });
@@ -34,6 +37,7 @@ $('.circle').on('click', function () {
   $(".dark_image").toggleClass("dark_image_view");
   $(".light_image").toggleClass("light_image_view");
   $(".text_light").toggleClass("text_dark")
+  $(".bg_text").toggleClass("bg_text_dark");
   
 
 });
