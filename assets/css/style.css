@@ -259,16 +259,19 @@ body {
   }
 .bg_text:hover{
   text-shadow: 5px 6px #b5b5b5;
-  transition: 0.5s ease-out;
+  transition: 2s ease-in-out;
 }
 .bg_text_dark:hover{
   text-shadow: 5px 6px #131313;
-  transition: 0.5s ease-out;
+  transition: 2s ease-in-out;
 }
 
 .welcome_text{
-  position: absolute;
+  
   top: 30%;
   font-family: 'Roboto Mono', monospace;
   font-size: larger;
+  background-color: #ffffff;
+  margin-left: 50px;
+  display: inline-block;
 }
